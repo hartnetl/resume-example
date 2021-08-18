@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
     <!-- Import font-awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <!-- Import hover.css from cdnjs-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Import our css-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Rosie resume</title>
@@ -32,22 +34,26 @@
                         <h2 class="title">Full Stack Developer</h2>
                     </div>
                 </div>
-                
+
                 <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
-                                <a href="#" class="hvr-bounce-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
-                            </li> 
+                                <a href="#" class="hvr-bounce-to-bottom"><i class="fa fa-home"
+                                        aria-hidden="true"></i><span>Home</span></a>
+                            </li>
                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                                <a href="#" class="hvr-bounce-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
-                            </li> 
+                                <a href="#" class="hvr-bounce-to-bottom"><i class="fa fa-graduation-cap"
+                                        aria-hidden="true"></i><span>Resume</span></a>
+                            </li>
                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
-                                <a href="#" class="hvr-bounce-to-bottom"><i class="far fa-comment" aria-hidden="true"></i><span>Contact</span></a>
-                            </li> 
+                                <a href="#" class="hvr-bounce-to-bottom"><i class="far fa-comment"
+                                        aria-hidden="true"></i><span>Contact</span></a>
+                            </li>
                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                                <a href="#" class="hvr-bounce-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
-                            </li> 
+                                <a href="#" class="hvr-bounce-to-bottom"><i class="fa fa-download"
+                                        aria-hidden="true"></i><span>Download</span></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -56,7 +62,87 @@
         </div>
     </header>
 
-    <section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-color-personal-info section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">Work History</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">My Skills</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-tv" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase"> Front End</h4>
+                                <p>
+                                   I'm skilled in UXD (User Experience Design) using the trinity of HTML, CSS and JavaScript. 
+                                   I also have extensive experience in Front End Frameworks such as Angular and React.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fas fa-cogs" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Back End</h4>
+                                <p>
+                                   I specialise in data-driven web applications. Many of my projects utilise document-based data. I use Python and Django in conjunction with MongoDB to process and present information.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row progress-section">
+                    <div class="col">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                <span class="sr-only">90% complete</span>
+                            </div>
+                            <span class="progress-type">HTML / HTML 5</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">CSS / CSS 3</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="sr-only">70% complete</span>
+                            </div>
+                            <span class="progress-type">JavaScript / jQuery</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">Django /  Python</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">SQL / NoSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -64,7 +150,7 @@
         <div id="footer-details" class="row">
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">About</h5>
-                <p class ="inline-block">
+                <p class="inline-block">
                     The world's first giraffe Full Stack Web Developer. Skilled in all things from HTML to Heroku.
                     Have the capacity for structural and design thinking, though my head is often in the clouds.
                 </p>
@@ -118,7 +204,7 @@
                             <span class="sr-only">YouTube Link</span>
                         </a>
                     </li>
-                </ul> 
+                </ul>
             </div>
         </div>
     </footer>
