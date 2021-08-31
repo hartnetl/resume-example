@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rosie resume</title>
-    
+
     <!-- Import bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
     <!-- Import font-awesome-->
@@ -22,14 +22,11 @@
 
     <!-- Import emailjs-->
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init("user_ogsCY3QEayyz5dNhpWNbU");
-            emailjs.send("service_kvgtgpi", "Rose", {
-                name: "Laura",
-                notes: "The project that I would like is..."
-            });
         })();
     </script>
 
@@ -87,9 +84,11 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
-                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                        <input type="text" name="email" id="emailaddress" class="form-control" placeholder="Email"
+                    <!-- When form is submitted, a function is invoked to send email -->
+                    <!-- <form onsubmit="return sendMail(this);"> here 'this' means this form -->
+
+                        <!-- <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                        <input type="text" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email"
                             required />
                         <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control"
                             placeholder="Project description" required></textarea>
@@ -98,6 +97,12 @@
                                 <button type="submit" class="btn btn-secondary">Send Project Request</button>
                             </div>
                         </div>
+                    </form> -->
+                    <form onsubmit="return sendMail(this);">
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                        <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+                        <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
                     </form>
                 </div>
             </div>
@@ -167,7 +172,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
