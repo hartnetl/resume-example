@@ -22,6 +22,7 @@ function userInformationHTML(user) {
 
 // This is the lesson 
 // https://www.youtube.com/watch?v=OEEb_LXSXh4
+
 function repoInformationHTML(repos) {
     if (repos.length == 0) {
         return `<div class="clearfix repo-list">No repos here!</div>`;
@@ -46,6 +47,9 @@ function repoInformationHTML(repos) {
 }
 
 function fetchGitHubInformation(event) {
+    // Empty divs so data isn't stored as search is changed
+    $("#gh-user-data").html("");
+    $("#gh-repo-data").html("");
 
     var username = $("#gh-username").val(); // Create a varible to hold the retrieved username
     if (!username) { // if username is empty...
@@ -87,7 +91,8 @@ function fetchGitHubInformation(event) {
                     `<h2>Error: ${errorResponse.responseJSON.message}</h2>`)
             }
         });
-
 }
 
+// Display Octocat when page loads
+$(document).ready(fetchGitHubInformation);
 
